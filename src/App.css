@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+.container{
+  margin: 0;
+  padding: 0;
+  padding-left: 20%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-card {
+  height: 200px;
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  box-shadow: 0 10px 10px -5px;
+}
+.dp {
+  margin-left: 50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.prof-details {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+}
+.text{
+  padding-left: 40px;
+}
+.btns{
+  padding: 20px;
+display: flex;
+justify-content: space-between;
+}
+.cover{
+  margin-bottom: -80px;
+  max-height: 350px;
+  width: 900px;
+  object-fit: fill;
+}
+.dp-1 {
+  height: 150px;
+  width: 150px;
+  border-radius: 80px;
+  margin-left: 90px;
+  border: 4px solid #DC0000;
+}
+.view-profile{
+  width: 100%;
+  background-color:#DC0000 ;
+  color: whitesmoke;
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+  font-size: 15px;
+  font-weight:600 ;
+  text-transform: uppercase;
+}
+
+.container-1{
+  display: flex;
+  height: 100vh;
+  padding: 30px;
+  margin-top: 35px;
+}
+
+.form-container{
+  padding: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color:rgba(0, 0, 0, 0.099);
+  height: 480px;
+  border-radius: 10px;
+  margin: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.home-image{
+  border-radius: 10px;
+  height: 520px;
+  width: 100%;
+  margin-top: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width:1130px){
+  .container{
+    margin:0;
+    padding: 20px;   
   }
-  to {
-    transform: rotate(360deg);
+  .profile-card {
+    height: 350px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  } 
+  .cover{
+    margin-bottom: -80px;
+    max-height: 155px;
+    width: 100%;
+    object-fit: fill;
+  }
+  .prof-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .home-image{
+   display: none;
+  }
+  .dp{
+    margin-left: 0;
+  }
+  .text{
+    padding: 0;
+  text-align: center;
   }
 }
